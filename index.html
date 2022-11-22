@@ -1,287 +1,344 @@
-<!-- cara update ke git
-git add .
-git commit -m '(isi bebas)'
-git push -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/raised_hands.png" type="image/x-icon" />
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- AOS Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/v.png" />
-
-    <!-- tailwind css -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=VT323&family=Yellowtail&display=swap" rel="stylesheet" />
-
-    <title>Vryz.me</title>
+    <title>Bio Link Portfolio</title>
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold f" href="#">
-          <img src="img/simple-logo.png" alt="vryz" width="90" />
-        </a>
-        <button
-          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About"> About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+  <body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+      <!-- theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img src="assets/img/perfil4.png" alt="" />
+            </div>
+          </div>
+
+          <h2 class="profile__name">Zulfi Fadilah Azhar</h2>
+          <h3 class="profile__profession">Collage Student</h3>
+
+          <ul class="profile__social">
+            <a href="www.instagram.com" target="_blank" class="profile__social-link"> <i class="ri-instagram-line"></i> </a>
+            <a href="www.github.com" target="_blank" class="profile__social-link"> <i class="ri-github-fill"></i> </a>
+            <a href="www .linkedin.com" target="_blank" class="profile__social-link"><i class="ri-whatsapp-line"></i></i> </a>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!-- Akhir navbar -->
 
-    <!-- jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/bg-2.jpg" alt="cyber-punk" id="cyber_punk_bg" />
-      <h1 class="display-4" id="tagHi">Hello World!</h1>
-      <p class="lead" id="tagSub">
-        Vryz is a personal blog containing projects <br />
-        portfolios, book reviews, and hobbies
-      </p>
-      <a href="#projects" class="btn" id="btnExplore">Explore</a>
-    </section>
-    <!-- akhir jumbotron -->
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col align-item-start mb-4 mt-5">
-            <p id="projects-header">projects</p>
+        <!-- <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">99+</h3>
+            <p class="profile__info-desc">
+              Years of <br />
+              Works
+            </p>
           </div>
-        </div>
-
-        <div class="row justify-content-between">
-          <div class="col-xs-8 col-md-6 col-lg-4 mb-3">
-            <div class="inner">
-              <a href="https://zulfifazhar.github.io/sign-up/Signup.html" target="_blank"><img src="img/Projects/1.PNG" class="card-img-top" alt="Responsive Sign Up and Login website" /></a>
-            </div>
-            <div class="card-body">
-              <p id="date">jan 7, 2022</p>
-              <p id="card-title">Sign Up and Sign In Pages</p>
-              <p class="card-text">Responsive Sign Up and Login website</p>
-            </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">99+</h3>
+            <p class="profile__info-desc">
+              Completed <br />
+              Projects
+            </p>
           </div>
-
-          <div class="col-xs-8 col-md-6 col-lg-4 mb-3">
-            <div class="inner">
-              <img src="img/Projects/2.PNG" class="card-img-top" alt="Projects 2" />
-            </div>
-            <div class="card-body">
-              <p id="date">jan 7, 2022</p>
-              <p id="card-title">Instagram Bio Link</p>
-              <p class="card-text">Responsive Bio Link with Dark Mode</p>
-            </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">99+</h3>
+            <p class="profile__info-desc">
+              Satisfied ( ͡° ͜ʖ ͡°)<br />
+              Customer
+            </p>
           </div>
+        </div> -->
 
-          <div class="col-xs-8 col-md-6 col-lg-4 mb-3">
-            <div class="inner">
-              <img src="img/Projects/3.jpg" class="card-img-top" alt="Projects 3" />
-            </div>
-            <div class="card-body">
-              <p id="date">jan 7, 2022</p>
-              <p id="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam deserunt nam placeat! Ut itaque iusto sed ea.</p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <a href="#" id="all-projects">See All Projects → </a>
-        <br /><br />
-      </div>
-      <hr />
-    </section>
-    <!-- akhir projects -->
+        <div class="profile__buttons">
+          <a download="" href="assets/pdf/CV-Zulfi.pdf" class="button">Download CV <i class="ri-download-2-line"></i></a>
 
-    <!-- about -->
-    <section id="About">
-      <div class="container text-center">
-        <div class="row mb-4">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad repellendus quae unde aliquam animi facere laudantium eum ipsa nostrum?</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam culpa, nesciunt sint voluptatem, accusamus, cum consectetur id quidem esse ratione eligendi eaque.</p>
-          </div>
-        </div>
-        <br /><br /><br />
-      </div>
-      <hr />
-    </section>
-    <!-- akhir about -->
-
-    <!--  contact me -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row text-center mb-4 mt-5">
-          <div class="col">
-            <h1>Contact Me</h1>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thank you!</strong> You're message has been sent.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-end">
-          <div class="col-md-9">
-            <form name="portfolio-contact-form" class="needs-validation" novalidate>
-              <div class="col-md-8 position-relative mb-4">
-                <label for="validationDefault01" class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="Input your name" name="name" id="validationDefault01" required />
-              </div>
-
-              <div class="col-md-8 position-relative mb-4">
-                <label for="validationDefault02" class="form-label">Email</label>
-                <input type="email" class="form-control" id="validationDefault02" placeholder="Input your email" required name="email" />
-                <div class="invalid-tooltip">Required</div>
-              </div>
-
-              <div class="col-md-8 position-relative mb-4">
-                <label for="validationDefault03" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="Input your subject" required name="subject" />
-              </div>
-
-              <div class="col-md-8 position-relative mb-4">
-                <label for="validationTextarea">Message</label>
-                <textarea class="form-control" placeholder="Leave your message here" id="validationTextarea" style="height: 200px" required name="message"></textarea>
-              </div>
-
-              <div class="col-12">
-                <button type="submit" class="btn btn-kirim text-light" style="background: #516EA4">Submit</button>
-                <button class="btn btn-loading d-none" type="button" style="background: #8097d7" disabled>
-                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-              </div>
-            </form>
+          <div class="profile__buttons-small">
+            <a href="" target="_blank" class="button button__small button__gray"> <i class="ri-linkedin-box-fill"></i></a>
+            <a href="" target="_blank" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end -->
+    </header>
+    <!--=============== END OF HEADER ===============-->
 
-    <!-- Footer 2 -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#516EA4" fill-opacity="1" d="M0,224L120,218.7C240,213,480,203,720,208C960,213,1200,235,1320,245.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-    </svg> -->
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+          <button class="filters__button filter-tab-active" data-target="#projects">Gallery</button>
 
-    <section class="Footer mt-5" id="footer">
-      <div class="text-center fst-normal">
-        <p class="text-light mt-5 display-6">Website sedang dalam perbaikan 🙏</p>
-        <p class="text-light mt-5">Find me on Social Media</p>
+          <button class="filters__button" data-target="#skills">Skill</button>
+        </ul>
+        <div class="filters__sections">
+          <!--=============== PROJECTS ===============-->
+          <div class="projects__content grid filters__active" data-content id="projects">
+            <!-- article 1 -->
+            <article class="projects__card">
+              <img src="assets/img/project1.jpg" alt="" class="projects__img" />
 
-        <a href="mailto:zulfi.fazhar12@gmail.com"><i class="bi bi-envelope fs-4 text-light me-1"></i></a>
-        <a href="https:www.linkedin.com/in/zulfi-fadilah-azhar-2584a31b3"><i class="bi bi-linkedin fs-4 text-light me-1"></i></a>
-        <a href="https:www.instagram.com/zulfifazhar._"><i class="bi bi-instagram fs-4 text-light me-1"></i></a>
-        <a href="https:www.facebook.com/zulfi.fadilah.7"><i class="bi bi-facebook fs-4 text-light me-1"></i></a>
-      </div>
-    </section>
-    <!-- Akhir Footer 2 -->
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">lorem</span>
+                  <h3 class="projects__title">Lorem, ipsum.</h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link projects__icon"></i>
+                  </a>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-file-code-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <!-- JS -->
-    <script src="index.js"></script>
+            <!-- article 2 -->
+            <article class="projects__card">
+              <img src="assets/img/project2.jpg" alt="" class="projects__img" />
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">lorem</span>
+                  <h3 class="projects__title">Lorem, ipsum.</h3>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-link projects__icon"></i>
+                  </a>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-file-code-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <!-- JS google sheets -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxKR9J_goudEWDmpjGoj3jGdQNVIwMvS8iNmvrpcRM1-HEqhhq6x-3VbCQ2n4J3bmEX/exec';
+            <!-- article 3 -->
+            <article class="projects__card">
+              <img src="assets/img/project3.jpg" alt="" class="projects__img" />
 
-      const form = document.forms['portfolio-contact-form'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">lorem</span>
+                  <h3 class="projects__title">Lorem, ipsum dolor.</h3>
+                  <a href="#" class="projects__button button button__small"> <i class="ri-link projects__icon"></i></a>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-file-code-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
+            <!-- article 4 -->
+            <article class="projects__card">
+              <img src="assets/img/project4.jpg" alt="" class="projects__img" />
 
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => {
-            console.error('Error!', error.message);
-          });
-      });
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">lorem</span>
+                  <h3 class="projects__title">Lorem, ipsum dolor.</h3>
+                  <a href="#" class="projects__button button button__small"> <i class="ri-link projects__icon"></i> </a>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-file-code-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-      let cyber_punk_bg = document.getElementById('cyber_punk_bg');
+            <!-- article 5 -->
+            <article class="projects__card">
+              <img src="assets/img/project5.jpg" alt="" class="projects__img" />
 
-      window.addEventListener('scroll', function () {
-        let value = window.scrollY;
-        cyber_punk_bg.style.top = value * 0.1 + 'px';
-      });
-    </script>
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">lorem</span>
+                  <h3 class="projects__title">Lorem ipsum dolor sit.</h3>
+                  <a href="#" class="projects__button button button__small"> <i class="ri-link projects__icon"></i> </a>
+                  <a href="#" class="projects__button button button__small">
+                    <i class="ri-file-code-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-    <!-- JS GSAP Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+          <!--=============== SKILLS ===============-->
+          <div class="skills__content grid" data-content id="skills">
+            <!-- skill area 1 -->
+            <div class="skills__area">
+              <h3 class="skills__title">Frontend Developer</h3>
 
-    <!-- JS AOS Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
+              <div class="skills__box">
+                <!-- skill group 1 -->
+                <div class="skills__group">
+                  <!-- skill data 1 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">HTML</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 2 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">CSS</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 3 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">JS</h3>
+                      <span class="skills__level">None</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- skill group 2 -->
+                <div class="skills__group">
+                  <!-- skill data 1 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Tailwind</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 2 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Bootstrap</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 3 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Git</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- skill area 2 -->
+            <div class="skills__area">
+              <h3 class="skills__title">Backend Developer</h3>
+
+              <div class="skills__box">
+                <!-- skill group 1 -->
+                <div class="skills__group">
+                  <!-- skill data 1 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">PHP</h3>
+                      <span class="skills__level">none</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 2 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">MySQL</h3>
+                      <span class="skills__level">none</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 3 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Python</h3>
+                      <span class="skills__level">none</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- skill group 2 -->
+                <div class="skills__group">
+                  <!-- skill data 1 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Firebase</h3>
+                      <span class="skills__level">none</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 2 -->
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Node JS</h3>
+                      <span class="skills__level">none</span>
+                    </div>
+                  </div>
+
+                  <!-- skill data 3 -->
+                  <!-- <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Git</h3>
+                      <span class="skills__level">Basic</span>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--=============== END OF MAIN ===============-->
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <span class="footer__copy">
+        <a class="footer__link" href="#"><i class="ri-plant-fill"></i></a>
+      </span>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
+
+<!-- https://www.youtube.com/watch?v=mq0xJxOTiYo&list=PLbLz7wLxoC4vlNU6AbT3Ol5rN8ZX-PYUC&index=22&t=2490s
+for tutorial -->
