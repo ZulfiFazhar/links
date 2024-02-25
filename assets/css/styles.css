@@ -52,6 +52,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -167,18 +171,32 @@ body.dark-theme {
   align-items: flex-end;
   justify-content: center;
   transition: 0.3s;
+  border: 5px solid var(--body-color);
 }
 
 .profile__perfil img {
   width: 150px;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .profile__border {
-  /* border: 5px solid var(--first-color); */
   background: linear-gradient(155deg, rgba(81,110,164,1) 0%, rgba(26,32,78,1) 50%, rgba(123,10,60,1) 100%);
+  background-size: 100% 100%;
+  animation: gradient 2s ease infinite;
   justify-self: center;
-  width: 110px;
-  height: 110px;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
   display: grid;
   place-items: center;
