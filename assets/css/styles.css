@@ -89,7 +89,7 @@ img {
   position: absolute;
   top: 1.5rem;
   right: 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
@@ -192,8 +192,6 @@ body.dark-theme {
 .profile__perfil img {
   width: 150px;
 }
-
-
 
 .profile__border {
   background: linear-gradient(155deg, #1d3c58, #a31672);
