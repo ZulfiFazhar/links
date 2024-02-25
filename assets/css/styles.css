@@ -99,6 +99,19 @@ img {
   color: var(--first-color);
 }
 
+/*=============== ANIMATION ===============*/
+.animate-opacity{
+  animation:opac 1.5s
+}
+@keyframes opac{
+  from{
+    opacity:0
+  } 
+  to{
+    opacity:1
+  }
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
@@ -165,6 +178,8 @@ body.dark-theme {
   width: 100px;
   height: 100px;
   background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 0%, hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -178,6 +193,21 @@ body.dark-theme {
   width: 150px;
 }
 
+
+
+.profile__border {
+  background: linear-gradient(155deg, #1d3c58, #a31672);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  justify-self: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -188,19 +218,6 @@ body.dark-theme {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.profile__border {
-  background: linear-gradient(155deg, rgba(81,110,164,1) 0%, rgba(26,32,78,1) 50%, rgba(123,10,60,1) 100%);
-  background-size: 100% 100%;
-  animation: gradient 2s ease infinite;
-  justify-self: center;
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin-bottom: 0.75rem;
 }
 
 .profile__name {
@@ -484,8 +501,8 @@ body.dark-theme {
   }
 
   .profile__border {
-    width: 135px;
-    height: 135px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 1rem;
   }
 
